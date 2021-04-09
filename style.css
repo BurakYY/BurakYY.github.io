@@ -1,0 +1,77 @@
+body {
+    background: F4F4F4;
+    margin:0;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    background: #FFF;
+    box-shadow: 0 5px 10px 8px #888888;
+}
+
+h1{
+    margin: 0px;
+    padding-top: 20px;
+    color:black;
+    font-size: 33px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+    color: black;
+    font-size: 23px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-align: center;
+
+}
+
+h3 {
+    margin: 0px;
+    color: black;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-align: center;
+}
+
+h4 {
+    margin: 10px 0px 10px 27px;
+    color: black;
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: normal;
+}
+
+p{
+    margin: 0px 10px 0px 80px;
+    color: black;
+    font-size: 15px;
+    font-family: "Calibri";
+    font-weight: normal;
+}
+
+.cizgi{
+    margin: 15px auto;
+    padding: 6px 40px 6px 40px;
+    background-color: #d6d6d6;
+    width: 85%;
+}
+
+ul{
+    margin: 0px 0px 0px 40px;
+    font-family: "Calibri";
+}
+
+footer {
+    margin-top: 20px;
+    padding: 6px 40px 6px 40px;
+    background: #d6d6d6;
+    font-family: "Open Sans";
+    font-size: 11px;
+    text-align: center;
+}
