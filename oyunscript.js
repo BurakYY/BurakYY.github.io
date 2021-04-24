@@ -41,10 +41,12 @@ function add(seviye) {
     }
     else if(seviye == "orta"){
         var boyut = 256;
+        document.getElementById("containerOyun").style.width = "80%";
         colorList = getRandomColor(boyut);
     }
     else if(seviye == "zor"){
         var boyut = 625;
+        document.getElementById("containerOyun").style.width = "90%";
         colorList = getRandomColor(boyut);
     }
 
