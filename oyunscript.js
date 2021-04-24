@@ -37,17 +37,14 @@ function add(seviye) {
 
     if(seviye == "kolay"){
         var boyut = 81;
-        butonlar.style.width = "34%";
         colorList = getRandomColor(boyut);
     }
     else if(seviye == "orta"){
         var boyut = 256;
-        butonlar.style.width = "58%";
         colorList = getRandomColor(boyut);
     }
     else if(seviye == "zor"){
         var boyut = 625;
-        butonlar.style.width = "89%";
         colorList = getRandomColor(boyut);
     }
 
@@ -69,6 +66,7 @@ function add(seviye) {
     bulunacak_renk.style.borderRadius = "4px";
     document.getElementById("bulunacak_renk").appendChild(bulunacak_renk);
     
+    /*
     for(i = 0; i<boyut ; i++){
         var color = colorList[i];
         element[i] = document.createElement("button");
@@ -83,7 +81,27 @@ function add(seviye) {
         };
         butonlar.appendChild(element[i]);
     }
-
+    */
+    var count = 0;
+    for(i = 0; i<Math.sqrt(boyut) ; i++){
+        var row = document.createElement("div");
+        for(j = 0; j<Math.sqrt(boyut) ; j++){
+            var color = colorList[count];
+            element[count] = document.createElement("button");
+            element[count].id = color
+            element[count].style.backgroundColor = color;
+            element[count].style.padding = "20px";
+            element[count].style.marginLeft = "5px";
+            element[count].style.marginTop = "5px";
+            element[count].style.borderRadius = "4px";
+            element[count].onclick = function() {
+                kontrol(this.style.backgroundColor,bulunacak_renk,element);
+            };
+            row.appendChild(element[count]);
+            count++;
+        }
+        butonlar.appendChild(row);
+    }
 }
 
 var zaman = 59;
