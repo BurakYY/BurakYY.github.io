@@ -1,5 +1,5 @@
 body {
-    background: F4F4F4;
+    background: #F4F4F4;
     margin:0;
 }
 
@@ -128,13 +128,28 @@ footer {
 /*--------------------------OYUN SAYFASI İÇİN----------------------------------*/
 
 .oyunalani{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
-.oyunalani p{
+#oyunaciklama{
     font-size: 20px;
     font-family: "Calibri";
+    padding-left: 20px;
+}
+
+#oyunismi {
+    padding-left: 20px;
+}
+
+.oyun_tablosu{
+    display: none;
+    font-size: 25px;
+    margin-left: 200px;
+}
+
+#butonlar {
+    margin: 20px auto;
 }
 
 .zorlukMenu {
@@ -168,4 +183,27 @@ footer {
 .zorlukMenu button:hover {
     cursor: pointer;
     box-shadow: 0 5px 10px 2px #888888;
+}
+
+#end_game {
+    display: none;
+    text-align: center;
+    font-size: 50px;
+}
+
+#puan_sonuc {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+#tekrar_oyna {
+    display: none;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tekrar_oyna{
+    text-align: center;
 }

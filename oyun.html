@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Burak Yiğit Yücel</title>
     <link rel="stylesheet" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
 </head>
 <body>
@@ -26,6 +26,16 @@
                 <b>Oyunun amacı</b> : Öncelikle bir zorluk seç! Ardından ekranda gözüken rengi tabloda bul ve
                 tıkla. Toplayabildiğin kadar puan toplmamaya çalış!
             </p>
+            
+            <p id="sure" class = "oyun_tablosu">
+                Kalan Süre : <span id="kalan_zaman">60</span>
+            </p>
+            <p id="puan" class = "oyun_tablosu">
+                Toplam Puan : <span id="kazanilan_puan">0</span>
+            </p>
+            <p id="bulunacak" class = "oyun_tablosu">
+                Bulunacak Renk : <span id="bulunacak_renk"></span>
+            </p>
 
             <nav class = "zorlukMenu" id="zorlukMenu">
                 <button type="button" class="kolay" id="kolay">KOLAY<br>9x9</button>
@@ -34,7 +44,13 @@
             </nav>
             
             <div id="butonlar"></div>
-
+            <h1 id = "end_game">OYUN SONA ERDİ</h1>
+            <h2 id = "puan_sonuc">
+                Kazanılan Puan : <span id="oyun_sonu_skor"></span>
+            </h1>
+            <div class="tekrar_oyna">
+            <button type="button" id="tekrar_oyna" onclick="tekrar()">Tekrar Oyna</button>
+            </div>
         </div>
         
         <footer>
