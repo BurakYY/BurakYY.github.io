@@ -127,6 +127,13 @@ footer {
 
 /*--------------------------OYUN SAYFASI İÇİN----------------------------------*/
 
+.containerOyun {
+    width: 85%;
+    margin: 0 auto;
+    background: #FFF;
+    box-shadow: 0 5px 10px 8px #888888;
+}
+
 .oyunalani{
     width: 100%;
     margin: 0 auto;
