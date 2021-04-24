@@ -15,7 +15,6 @@ function getRandomColor(num) {
 var skor = 0;
 
 function kontrol(renk,aranan_renk,arr){
-    //alert(renk+" "+aranan_renk)
     if(renk == aranan_renk.style.backgroundColor){
         skor++;
         document.getElementById("kazanilan_puan").innerHTML = skor;
@@ -30,13 +29,9 @@ function kontrol(renk,aranan_renk,arr){
 var x;
 
 function add(seviye) {
-    //Create an input type dynamically.   
+
     var element = []
     var colorList = []
-    //Assign different attributes to the element. 
-    //element.type = type;
-    //element.value = type; // Really? You want the default value to be the type string?
-    //element.name = type; // And the name too?
 
     var butonlar = document.getElementById("butonlar");
 
@@ -56,20 +51,14 @@ function add(seviye) {
         colorList = getRandomColor(boyut);
     }
 
-    var kaldir1 = document.getElementById("oyunismi");
-    var kaldir2 = document.getElementById("oyunaciklama");
-    var kaldir3 = document.getElementById("zorlukMenu");
-    kaldir1.remove();
-    kaldir2.remove();
-    kaldir3.remove();
+    document.getElementById("oyunismi").remove();
+    document.getElementById("oyunaciklama").remove();
+    document.getElementById("zorlukMenu").remove();
 
     x = setInterval(timer,1000);
-    var sure = document.getElementById("sure");
-    sure.style.display = "inline";
-    var puan = document.getElementById("puan");
-    puan.style.display = "inline";
-    var bulunacak = document.getElementById("bulunacak");
-    bulunacak.style.display = "inline";
+    document.getElementById("sure").style.display = "inline";
+    document.getElementById("puan").style.display = "inline";
+    document.getElementById("bulunacak").style.display = "inline";
 
 
     var bulunacak_renk = document.createElement("button");
@@ -84,7 +73,6 @@ function add(seviye) {
         var color = colorList[i];
         element[i] = document.createElement("button");
         element[i].id = color
-        //element[i].style.backgroundColor = getRandomColor();
         element[i].style.backgroundColor = color;
         element[i].style.padding = "20px";
         element[i].style.marginLeft = "5px";
@@ -113,7 +101,9 @@ function timer(){
         document.getElementById("tekrar_oyna").style.display = "inline";
         document.getElementById("oyun_sonu_skor").innerHTML = skor;
     }
-    
+    else if(zaman == 9){
+        document.getElementById("kalan_zaman").style.color = "#FF0000";
+    }
     zaman--;
 }
 

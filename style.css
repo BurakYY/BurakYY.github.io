@@ -145,7 +145,7 @@ footer {
 .oyun_tablosu{
     display: none;
     font-size: 25px;
-    margin-left: 200px;
+    margin-left: 240px;
 }
 
 #butonlar {
@@ -183,6 +183,14 @@ footer {
 .zorlukMenu button:hover {
     cursor: pointer;
     box-shadow: 0 5px 10px 2px #888888;
+}
+
+#kalan_zaman {
+    font-weight: bold;
+}
+
+#kazanilan_puan {
+    font-weight: bold;
 }
 
 #end_game {
