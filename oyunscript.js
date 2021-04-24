@@ -37,17 +37,17 @@ function add(seviye) {
 
     if(seviye == "kolay"){
         var boyut = 81;
-        butonlar.style.width = "450px";
+        butonlar.style.width = "34%";
         colorList = getRandomColor(boyut);
     }
     else if(seviye == "orta"){
         var boyut = 256;
-        butonlar.style.width = "790px";
+        butonlar.style.width = "58%";
         colorList = getRandomColor(boyut);
     }
     else if(seviye == "zor"){
         var boyut = 625;
-        butonlar.style.width = "1230px";
+        butonlar.style.width = "89%";
         colorList = getRandomColor(boyut);
     }
 

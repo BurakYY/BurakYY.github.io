@@ -145,7 +145,7 @@ footer {
 .oyun_tablosu{
     display: none;
     font-size: 25px;
-    margin-left: 240px;
+    padding-left: 50px;
 }
 
 #butonlar {
@@ -207,11 +207,16 @@ footer {
 
 #tekrar_oyna {
     display: none;
-    padding: 40px;
+    padding: 30px;
     font-size: 20px;
     font-weight: bold;
 }
 
 .tekrar_oyna{
+    text-align: center;
+}
+
+.oyun_menu{
+    width: 100%;
     text-align: center;
 }
