@@ -41,12 +41,11 @@ function add(seviye) {
     }
     else if(seviye == "orta"){
         var boyut = 256;
-        document.getElementById("containerOyun").style.width = "80%";
         colorList = getRandomColor(boyut);
     }
     else if(seviye == "zor"){
         var boyut = 625;
-        document.getElementById("containerOyun").style.width = "90%";
+        document.getElementById("containerOyun").style.width = "100%";
         colorList = getRandomColor(boyut);
     }
 
@@ -62,7 +61,7 @@ function add(seviye) {
 
     var bulunacak_renk = document.createElement("button");
     bulunacak_renk.style.backgroundColor = colorList[Math.floor(Math.random() * colorList.length)];
-    bulunacak_renk.style.padding = "20px";
+    bulunacak_renk.style.padding = "1.5%";
     bulunacak_renk.style.marginLeft = "5px";
     bulunacak_renk.style.marginTop = "5px";
     bulunacak_renk.style.borderRadius = "4px";
@@ -92,7 +91,7 @@ function add(seviye) {
             element[count] = document.createElement("button");
             element[count].id = color
             element[count].style.backgroundColor = color;
-            element[count].style.padding = "20px";
+            element[count].style.padding = "1.5%";
             element[count].style.marginLeft = "5px";
             element[count].style.marginTop = "5px";
             element[count].style.borderRadius = "4px";
